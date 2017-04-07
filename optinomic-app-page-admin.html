@@ -26,26 +26,7 @@ Admin-Page of Optinomic-Apps
 
         is: 'optinomic-app-page-admin',
 
-        __init: function() {
-
-            var clinic = this.get('_clinic');
-            var current_app = this.get('_current_app');
-
-
-            // Load Data if not available
-            if (clinic === null) {
-                this.dispatch('actionGetClinic');
-            };
-
-            if (current_app.found === false) {
-                this.dispatch('actionGetApps');
-            };
-
-            console.log('INIT (optinomic-app-page-readme)', clinic, current_app);
-
-            // Update logState
-            this.logState();
-        },
+        __init: function() {},
 
         __translate: function(given_language) {
             var t = {
