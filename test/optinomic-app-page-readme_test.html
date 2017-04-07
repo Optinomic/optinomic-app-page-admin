@@ -1,30 +1,29 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
-
-    <title>optinomic-app-page-readme test</title>
-
+    <title>optinomic-app-page-admin test</title>
     <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
     <script src="../../web-component-tester/browser.js"></script>
+    <link rel="import" href="../optinomic-app-page-admin.html">
+</head>
 
-    <link rel="import" href="../optinomic-app-page-readme.html">
-  </head>
-  <body>
+<body>
     <test-fixture id="basic">
-      <template>
-        <optinomic-app-page-readme></optinomic-app-page-readme>
-      </template>
+        <template>
+            <optinomic-app-page-admin></optinomic-app-page-admin>
+        </template>
     </test-fixture>
-
     <script>
-      suite('optinomic-app-page-readme', function() {
+    suite('optinomic-app-page-admin', function() {
         test('instantiating the element works', function() {
-          var element = fixture('basic');
-          assert.equal(element.is, 'optinomic-app-page-readme');
+            var element = fixture('basic');
+            assert.equal(element.is, 'optinomic-app-page-admin');
         });
-      });
+    });
     </script>
-  </body>
+</body>
+
 </html>
